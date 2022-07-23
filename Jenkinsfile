@@ -18,7 +18,7 @@ pipeline {
             }
         }
     
-     stage('Sonar Analysis') {
+        stage('Sonar Analysis') {
             environment {
                 scannerHome = tool 'sonarqubescanner'
             }
@@ -30,7 +30,7 @@ pipeline {
                 echo '<--------------- Sonar Analysis Ends --------------->'
             }
          
-       stage("Quality Gate") {
+         stage("Quality Gate") {
             steps {
                 script {
                   echo '<--------------- Sonar Gate Analysis Started --------------->'
