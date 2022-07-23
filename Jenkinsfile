@@ -29,7 +29,7 @@ pipeline {
                 }    
                 echo '<--------------- Sonar Analysis Ends --------------->'
             }
-         
+        }
          stage("Quality Gate") {
             steps {
                 script {
