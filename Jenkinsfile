@@ -49,7 +49,7 @@ pipeline {
                   echo '<--------------- Sonar Gate Analysis Ends  --------------->'
                 }
             }
-             
+         }
           stage("Docker Build") {
             steps {
                 script {
@@ -61,4 +61,4 @@ pipeline {
         }
        }
      }  
-    }
+    
